@@ -11,7 +11,7 @@
 
 body {
   color: #f4f4f4;
-  background-image: url("img/bg2.jpg");
+  background-image: url("../img/bg2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -152,8 +152,8 @@ label {
 
 .contact {
   border: 1px solid red;
-  margin: 8% 20% 10% 20%;
-  padding: 1%;
+  margin: 7% 20% 10% 20%;
+  padding: 5px;
   font-family: "Poppins", sans-serif;
   border: 2px solid whitesmoke;
   background-color: rgba(0, 0, 0, 0.6);
@@ -164,19 +164,24 @@ label {
 
 .contact p {
   text-align: justify;
+  padding: 15px;
 }
 
 .contact h1 {
   text-align: center;
+  font-size: 30px;
 }
 
 .contact-icon {
   margin: auto;
-  margin-top: 60px;
 }
 
 .contact-icon a {
-  margin: 27px;
+  margin: 25px;
+}
+
+.contact .contact-icon .map {
+  align-items: center;
 }
 
 .contact-icon img {
@@ -186,6 +191,74 @@ label {
 .contact-icon img:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+.form-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  /* border: 1px solid black; */
+}
+
+.form-login h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-login .isi .form-gruplogin input {
+  color: #f4f4f4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #f4f4f4;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 0;
+  background: none;
+}
+
+.form-login .isi p {
+  text-align: end;
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.form-login .isi .form-gruplogin .btn {
+  padding: 10px;
+  width: 100%;
+  border-radius: 50px;
+  border-color: #010101;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.form-login .isi {
+  padding: 10px;
+  margin: 0 30%;
+}
+
+.form-login .isi p a {
+  color: #c8a579;
+}
+
+.dataform {
+  /* border: 1px solid whitesmoke; */
+  border-radius: 10px;
+  width: 80%;
+  padding-top: 15px;
+}
+
+.dataform h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.dataform table {
+  /* border: 1px solid whitesmoke; */
+  align-items: center;
+  margin: 2% 30%;
+  font-size: 30px;
 }
 
 /* Media queries*/

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stylixia</title>
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
@@ -14,10 +14,11 @@
   <nav class="navbar">
     <a href="index.html" class="logo">Stylixia</a>
     <div class="navbar-nav">
-      <a href="index.html"">Home</a>
+      <a href="beranda.html"">Home</a>
       <a href="course.html">Course</a>
       <a href="aboutus.html">About Us </a>
       <a href="contact.html">Contact</a>
+      <a href="dataform.html">Data Form</a>
     </div>
   </nav>
   <!--Navbar End-->
@@ -32,13 +33,9 @@
         <input type="email" name="email" id="email" placeholder="Your Email" required>
       </div>
       <div class="form-group">
-        <label for="password">password</label>
-        <input type="password" name="password" id="password" placeholder="Your Password" required>
-      </div>
-      <div class="form-group">
         <label for="Gender">Gender</label>
-        <input type="radio" name="gender" id="gender" required><span>Laki</span>
-        <input type="radio" name="gender" id="gender" required><span>Perempuan</span>
+        <input type="radio" name="gender" id="gender" required value="Laki-laki"><span>Laki</span>
+        <input type="radio" name="gender" id="gender" required value="Perempuan"><span>Perempuan</span>
         <label for="jurusan">Jurusan</label>
         <select name="jurusan" id="jurusan">
           <option value="#"></option> 
@@ -49,14 +46,11 @@
       </div>
       <div class="form-group">
         <label for="course">Course</label>
-        <input type="checkbox" name="corse" id="course" required><span>CSS</span>
-        <input type="checkbox" name="corse" id="course" required><span>JavaScript</span>
-        <input type="checkbox" name="corse" id="course" required><span>PHP</span>
+        <input type="checkbox" name="course" id="course" value="CSS"><span>CSS</span>
+        <input type="checkbox" name="course" id="course" value="JavaScript"><span>JavaScript</span>
+        <input type="checkbox" name="course" id="course" value="PHP"><span>PHP</span>
       </div>
-      <div class="form-group">
-        <label for="ktm">Kartu Tanda Mahasiswa</label>
-        <input type="file" name="ktm" id="ktm" required>
-      </div>
+      <textarea name="alasan" id="" cols="60" rows="5" placeholder="Mengapa anda memilih course diatas"></textarea>   
       <div class="form-group">
         <button type="submit" class="btn">Send</button>
         <button type="reset" class="btn">Reset</button>
@@ -73,4 +67,5 @@
   </footer>
   <!--Footer End-->
 </body>
+<script src="./js/daf_course.js"></script>
 </html>

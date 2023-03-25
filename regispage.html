@@ -16,18 +16,21 @@
     <!--Navbar End-->
     <div class="form-login">
       <form>
-        <h1>Login</h1>
+        <h1>Daftar</h1>
         <br />
         <div class="isi">
           <div class="form-gruplogin">
-            <input type="text" name="username" id="username" placeholder="Username" required />
+            <input type="text" name="username" id="daf_username" placeholder="Username" required />
           </div>
           <div class="form-gruplogin">
-            <input type="password" name="password" id="password" placeholder="Password" required />
+            <input type="email" name="email" id="daf_email" placeholder="Email" required />
           </div>
-          <p>Don't have an account? <a href="regispage.html">Register</a></p>
           <div class="form-gruplogin">
-            <button type="submit" class="btn">Send</button>
+            <input type="password" name="password" id="daf_password" placeholder="Password" required />
+          </div>
+          <p>Sudah punya akun? <a href="index.html">Login</a></p>
+          <div class="form-gruplogin">
+            <button class="btn" type="submit" id="daftar" name="register" value="register">Daftar</button>
           </div>
         </div>
       </form>
@@ -40,5 +43,5 @@
     </footer>
     <!--Footer End-->
   </body>
-  <script src="./js/login.js"></script>
+  <script src="./js/daftar.js"></script>
 </html>
